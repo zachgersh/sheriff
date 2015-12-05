@@ -1,9 +1,8 @@
 package cmd
 
 import (
-	"os"
-
 	"github.com/spf13/cobra"
+	"github.com/zachgersh/sheriff/mod"
 )
 
 func init() {
@@ -13,7 +12,5 @@ func init() {
 var targetCmd = &cobra.Command{
 	Use:   "target",
 	Short: "UAA environment to target",
-	Run: func(cmd *cobra.Command, args []string) {
-		os.Exit(1)
-	},
+	Run:   mod.NewTargetModule(nil, nil),
 }

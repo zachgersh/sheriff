@@ -1,4 +1,4 @@
-package biz_test
+package mod_test
 
 import (
 	. "github.com/onsi/ginkgo"
@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestBiz(t *testing.T) {
+func TestMod(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Biz Suite")
+	RunSpecs(t, "Module Suite")
 }
